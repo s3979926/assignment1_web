@@ -50,7 +50,7 @@ body{
   border:2px solid #eaf0fa; cursor:pointer; padding:0;
 }
 .action-btn:hover{ background:var(--navy-dark); }
-.icon-dark-img{ width:22px; height:22px; object-fit:contain; filter:brightness(0) invert(1); }
+.icon-dark-img{ width:22px; height:22px; object-fit:contain; }
 
 /* ===== NAV ===== */
 .nav{ background:var(--grey); border-top:1px solid #bfc6cf; border-bottom:1px solid #bfc6cf; }
