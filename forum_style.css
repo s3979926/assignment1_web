@@ -1,1 +1,19 @@
 /* forum.style */
+:root {
+  --navy:#0a3b78;
+  --navy-dark:#072f61;
+  --grey:#d2d2d2;
+  --ink:#111;
+  --white:#fff;
+  --card:#ffffff;
+  --line:#e5e9f0;
+  --muted:#6b7280;
+  --maxw:1100px;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;
+  color:var(--ink); background:#f7f8fb;
+}
