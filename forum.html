@@ -1,2 +1,45 @@
-<title>Forum </title>
-<h1>LOLOL112321</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hobby Hub — Forum</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <!-- Left: Logo -->
+      <a class="brand" href="#">
+        <img src="picture/logo.png" alt="Hobby Hub logo" class="logo-img">
+      </a>
+
+      <!-- Center: Search (text button, no generated icon) -->
+      <form class="search" role="search" aria-label="Site search" onsubmit="event.preventDefault();">
+        <input type="search" placeholder="Search" aria-label="Search" />
+        <button type="submit" aria-label="Search" class="search-btn">Search</button>
+      </form>
+
+      <!-- Right: user + cart (from icon folder) -->
+      <div class="actions">
+        <button class="action-btn" aria-label="Account">
+          <img src="icon/user_icon.png" alt="Account" class="icon-dark-img">
+        </button>
+        <button class="action-btn" aria-label="Cart">
+          <img src="icon/cart_icon.png" alt="Cart" class="icon-dark-img">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BOTTOM NAV -->
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="#">HOME</a>
+      <a class="active" href="#">FORUM</a>
+      <a href="#">BLOG</a>
+      <a href="#">PRODUCT REVIEW</a>
+    </div>
+  </nav>
