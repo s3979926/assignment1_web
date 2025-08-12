@@ -1,1 +1,37 @@
- <head><title>Hello Test aaa </title></head>`
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Shopping Cart</title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+
+    <form>
+        <table border="1" cellpadding="5">
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>Apple</td>
+                <td>$1.00</td>
+                <td><input type="number" name="apple_qty" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>$0.50</td>
+                <td><input type="number" name="banana_qty" min="0" value="0"></td>
+            </tr>
+            <tr>
+                <td>Orange</td>
+                <td>$0.75</td>
+                <td><input type="number" name="orange_qty" min="0" value="0"></td>
+            </tr>
+        </table>
+
+        <br>
+        <input type="submit" value="Checkout">
+    </form>
+</body>
+</html>
