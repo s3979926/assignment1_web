@@ -63,7 +63,7 @@ body{
 /* ===== PAGE WRAPPER ===== */
 .page{ max-width:var(--maxw); margin:24px auto 60px; background:transparent; padding:0 16px; }
 
-/* Forum header row (matches your screenshot) */
+/* Forum header row */
 .forum-head{ text-align:center; position:relative; padding:8px 0 20px; }
 .forum-head h1{ margin:8px 0 10px; font-size:30px; }
 .forum-sub{ margin:0 auto 14px; font-size:14px; color:var(--muted); max-width:800px; line-height:1.5; }
@@ -97,14 +97,14 @@ body{
   background:var(--card); border:1px solid var(--line); border-radius:10px; padding:18px; margin-top:18px;
 }
 .post-head h2{ margin:0 0 6px; font-size:18px; }
-/* ⟶ Match HTML .meta-lines instead of .meta */
+
 .meta-lines{ color:#6b7280; font-size:12px; line-height:1.4; }
 .meta-lines a{ color:#1e40af; text-decoration:none; }
 
 .post-body p{ margin:14px 0; line-height:1.5; color:#2c3442; }
 .post-note{ color:#4b5563; }
 
-/* Optional thin divider like the mockup */
+/* Thin divider */
 .rule{ height:1px; background:var(--line); margin:10px 0; }
 
 /* Thumbnails */
@@ -120,7 +120,7 @@ body{
 /* Replies */
 .replies{ margin-top:10px; border-top:1px solid var(--line); padding-top:12px; }
 .replies h3{ margin:0 0 10px; font-size:16px; }
-/* ⟶ Match HTML .reply-head instead of element selector */
+
 .reply-head{ color:#6b7280; font-size:12px; display:flex; gap:8px; flex-wrap:wrap; }
 .reply p{ margin:10px 0 8px; }
 .dot{ opacity:.6; }
