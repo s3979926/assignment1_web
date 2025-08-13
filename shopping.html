@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Simple Shopping Cart aaaa</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hobby Hub — Forum</title>
+  <link rel="stylesheet" href="new.css">
 </head>
 <body>
-    <h1>Shopping Cart</h1>
 
-    <form>
-        <table border="1" cellpadding="5">
-            <tr>
-                <th>Item</th>
-                <th>Price</th>
-                <th>Quantity</th>
-            </tr>
-            <tr>
-                <td>Apple</td>
-                <td>$1.00</td>
-                <td><input type="number" name="apple_qty" min="0" value="0"></td>
-            </tr>
-            <tr>
-                <td>Banana</td>
-                <td>$0.50</td>
-                <td><input type="number" name="banana_qty" min="0" value="0"></td>
-            </tr>
-            <tr>
-                <td>Orange</td>
-                <td>$0.75</td>
-                <td><input type="number" name="orange_qty" min="0" value="0"></td>
-            </tr>
-        </table>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <!-- Left: Logo -->
+      <a class="brand" href="#">
+        <img src="logo.png" alt="Hobby Hub logo" class="logo-img">
+      </a>
 
-        <br>
-        <input type="submit" value="Checkout">
-    </form>
-</body>
-</html>
+      <!-- Center: Search (search button) -->
+      <form class="search" role="search" aria-label="Site search" onsubmit="event.preventDefault();">
+        <input type="search" placeholder="Search" aria-label="Search" />
+        <button type="submit" aria-label="Search" class="search-btn">Search</button>
+      </form>
+
+      <!-- Right: user, cart -->
+      <div class="actions">
+        <button class="action-btn" aria-label="Account">
+          <img src="icon/user_icon.png" alt="Account" class="icon-dark-img">
+        </button>
+        <button class="action-btn" aria-label="Cart">
+          <img src="icon/cart_icon.png" alt="Cart" class="icon-dark-img">
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BOTTOM NAV -->
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="#">HOME</a>
+      <a href="#">FORUM</a>
+      <a href="#">BLOG</a>
+      <a href="#">PRODUCT REVIEW</a>
+    </div>
+  </nav>

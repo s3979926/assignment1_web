@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Bar Container */
+.topbar {
+  background-color: #1E3A6F; /* Deep blue background */
+  padding: 10px 0;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Inner Flex Layout */
+.topbar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Logo Section */
+.brand .logo-img {
+  height: 40px;
+}
+
+/* Search Form */
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search input[type="search"] {
+  padding: 6px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-btn {
+  background-color: #1E3A6F;
+  color: white;
+  border: 1px solid white;
+  padding: 6px 12px;
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Action Buttons (User + Cart) */
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.icon-dark-img {
+  height: 30px;
+}
+
+/* Bottom Navigation Bar */
+.nav {
+  background-color: #f2f2f2; /* Light gray background */
+  border-top: 1px solid #ccc;
+  padding: 12px 0;
+  font-family: Arial, sans-serif;
+}
+
+.nav-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.nav-inner a {
+  color: #000; /* Black text */
+  text-decoration: none; /* No underline */
+  font-size: 16px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-inner a:hover {
+  color: #1E3A6F; /* Deep blue on hover */
+}
