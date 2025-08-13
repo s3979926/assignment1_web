@@ -16,13 +16,13 @@
         <img src="picture/logo.png" alt="Hobby Hub logo" class="logo-img">
       </a>
 
-      <!-- Center: Search (text button, no generated icon) -->
+      <!-- Center: Search (search button) -->
       <form class="search" role="search" aria-label="Site search" onsubmit="event.preventDefault();">
         <input type="search" placeholder="Search" aria-label="Search" />
         <button type="submit" aria-label="Search" class="search-btn">Search</button>
       </form>
 
-      <!-- Right: user + cart (from icon folder) -->
+      <!-- Right: user, cart -->
       <div class="actions">
         <button class="action-btn" aria-label="Account">
           <img src="icon/user_icon.png" alt="Account" class="icon-dark-img">
@@ -38,8 +38,140 @@
   <nav class="nav" aria-label="Main">
     <div class="nav-inner">
       <a href="#">HOME</a>
-      <a class="active" href="#">FORUM</a>
+      <a href="#">FORUM</a>
       <a href="#">BLOG</a>
       <a href="#">PRODUCT REVIEW</a>
     </div>
   </nav>
+
+  
+  <!-- ===== PAGE ===== -->
+<main class="page">
+
+  <!-- Forum heading row -->
+  <header class="forum-head">
+    <h1>Forum</h1>
+    <p class="forum-sub">
+      This is a place for everyone to discuss about their interest topic. Please be a friendly, kind user in our community.
+    </p>
+
+    <div class="forum-tools">
+      <a class="btn primary" href="create.html">＋ Create your post</a>
+
+      <!-- Filter dropdown -->
+      <details class="filter">
+        <summary aria-label="Filter menu">
+          <img src="icon/filter_icon.png" alt="Filter" class="icon-dark-img">
+        </summary>
+        <ul class="menu">
+          <li><a href="#" data-sort="old-new">Old → New</a></li>
+          <li><a href="#" data-sort="new-old">New → Old</a></li>
+          <li><a href="#" data-sort="title">Thread title</a></li>
+          <li><a href="#" data-sort="content">Thread content</a></li>
+        </ul>
+      </details>
+    </div>
+  </header>
+
+  <!-- Main post card -->
+  <article class="post">
+    <header class="post-head">
+      <h2>Post Title: Charizard Pokemon Card</h2>
+      <div class="meta-lines">
+        <div>Posted by: <a href="#">lucky_hands_omega0711</a> &nbsp;&nbsp; 121 Replies</div>
+        <div>Posted: 16/07/2024 &nbsp;&nbsp; Post ID: 188019</div>
+      </div>
+    </header>
+
+    <div class="post-body">
+      <p>
+        Hey everyone, Charizard card from my dad, and I'm really curious about it. I'm trying to figure out how much it might be
+        worth and when it was produced. It looks like it's in pretty good condition — no heavy creases, just a slight ding on one corner.
+        The holo foil is bright, and edges look sharp. I'm especially interested in knowing the print run or set, what set it came out in,
+        and whether this is a common or rarer card. Appreciate any insights from collectors who know the specifics!
+      </p>
+      <p class="post-note">
+        I have a couple more cards as well (Blastoise and Venusaur), but I'll keep this thread focused on Charizard. I'm also open to offers
+        if the value makes sense. FYI: This is Pokémon trading card series from early set; may have a tiny print line on the holo. Thanks!
+      </p>
+
+      <!-- Thin divider like your mockup -->
+      <div class="rule"></div>
+
+      <!-- Thumbnails row -->
+      <div class="thumbs">
+        <div class="thumb"><img src="picture/poke1.png" alt="Charizard card"></div>
+        <div class="thumb"><img src="picture/poke2.png" alt="Trainer card"></div>
+        <div class="thumb"><img src="picture/poke3.png" alt="Ivysaur card"></div>
+        <div class="thumb"><img src="picture/poke4.png" alt="Pikachu card"></div>
+        <a class="more" href="#">+5 images</a>
+      </div>
+    </div>
+
+    <!-- Replies -->
+    <section class="replies">
+      <h3>Replies</h3>
+
+      <article class="reply">
+        <header class="reply-head">
+          <strong>looking_good12</strong>
+          <span class="dot">•</span>
+          <span>Posted: 14:17, 8/10/2025 (2 days ago)</span>
+          <span class="dot">•</span>
+          <span>Post ID: 188019</span>
+        </header>
+        <p>
+          Hey! If your Charizard is from the original Base Set and in good condition, it can range from about $50 for a later print
+          to several hundred (or even more) for early editions in top shape. Check the date at the bottom and the set symbol next to
+          the card number — that'll confirm which version you have. Posting some clear pics here will help, and I might be interested
+          in some of your holo Rares too.
+        </p>
+        <a class="show-more" href="#">See more replies</a>
+      </article>
+
+      <!-- Big reply box + button -->
+      <form class="reply-form" onsubmit="event.preventDefault(); alert('Reply submitted');">
+        <input type="text" placeholder="Your reply ..." maxlength="300" />
+        <small>Your reply must be less than 300 words</small>
+        <button type="submit" class="btn primary">Reply</button>
+      </form>
+    </section>
+  </article>
+
+  <!-- Suggestions table -->
+  <section class="suggest">
+    <h3>Other topics you might like</h3>
+    <div class="table">
+      <div class="row head">
+        <div class="c-title">Topic</div>
+        <div class="c-replies">Replies</div>
+        <div class="c-date">Posted</div>
+        <div class="c-id">Post ID</div>
+      </div>
+
+      <div class="row">
+        <div class="c-title"><a href="#">Show Off! Your Rarest Pokémon Card</a></div>
+        <div class="c-replies">121 Replies</div>
+        <div class="c-date">Posted: 12:41, 07/10/2025 (3 days ago)</div>
+        <div class="c-id">982321</div>
+      </div>
+
+      <div class="row">
+        <div class="c-title"><a href="#">Best Way to Store and Protect Collectible Cards?</a></div>
+        <div class="c-replies">91 Replies</div>
+        <div class="c-date">Posted: 10:12, 06/10/2025 (4 days ago)</div>
+        <div class="c-id">982201</div>
+      </div>
+
+      <div class="row">
+        <div class="c-title"><a href="#">Your First Rare Box Pull Guide</a></div>
+        <div class="c-replies">52 Replies</div>
+        <div class="c-date">Posted: 08:30, 05/10/2025 (5 days ago)</div>
+        <div class="c-id">981934</div>
+      </div>
+
+      <div class="row">
+        <div class="c-title"><a href="#">Value Checks: Is This Card Worth Grading?</a></div>
+        <div class="c-replies">29 Replies</div>
+        <div class="c-date">Posted: 20:14
+
