@@ -57,3 +57,34 @@ body{
   display:flex; gap:36px; justify-content:center;
 }
 .nav a{ color:#000; text-decoration:none; font-weight:700; letter-spacing:.4px; }
+
+
+.nav {
+  background-color: #e6e6e6;
+  padding: 10px 0;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+  background-color: transparent;
+  border: none;
+  color: #1E3A6F;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+.nav-btn:hover {
+  background-color: #1E3A6F;
+  color: white;
+  border-radius: 4px;
+}
