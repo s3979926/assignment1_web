@@ -177,7 +177,7 @@ body{
 .footer-list li{ margin: 8px 0; }
 
 .footer-bottom{
-  background: var(--navy-dark);
+  background: var(--navy);
   max-width: var(--maxw);
   margin: 0 auto;
   padding: 10px 16px;
