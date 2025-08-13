@@ -107,43 +107,15 @@ body{
 /* Optional thin divider like the mockup */
 .rule{ height:1px; background:var(--line); margin:10px 0; }
 
-
 /* Thumbnails */
-.thumbs{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  margin:14px 0 6px;
-}
-
+.thumbs{ display:flex; align-items:center; gap:12px; margin:14px 0 6px; }
 .thumb{
-  width:150px;
-  height:120px;
-  border:1px solid var(--line);
-  border-radius:8px;
-  overflow:hidden;
-  box-shadow:0 2px 8px rgba(0,0,0,.08);
-  transition:transform .15s ease, box-shadow .15s ease;
+  width:200px; height:250px;
+  border:1px solid #cbd5e1; border-radius:6px; overflow:hidden; background:#fff;
+  display:grid; place-items:center;
 }
-
-.thumb img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-
-.thumb:hover{
-  transform:translateY(-2px);
-  box-shadow:0 8px 16px rgba(0,0,0,.12);
-}
-
-.thumbs .more{
-  margin-left:auto;
-  font-size:12px;
-  text-decoration:none;
-  color:#1e40af;
-}
+.thumb img{ width:100%; height:100%; object-fit:cover; }
+.thumbs .more{ margin-left:auto; font-size:12px; text-decoration:none; color:#1e40af; }
 
 /* Replies */
 .replies{ margin-top:10px; border-top:1px solid var(--line); padding-top:12px; }
