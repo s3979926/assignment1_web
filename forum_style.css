@@ -191,3 +191,80 @@ body{
 
 .legal{ display: flex; gap: 18px; }
 .legal span{ white-space: nowrap; }
+
+
+/* THIS IS FOR CREATE PAGE */
+/* controls row under forum */
+.compose-controls{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  max-width:800px;
+  margin:0 auto 10px;
+  gap:12px;
+}
+.icon-btn{
+  width:38px; height:38px; border-radius:8px; border:1px solid #d7dce4;
+  background:#fff; display:grid; place-items:center; cursor:pointer;
+}
+.icon-btn.danger{ border-color:#fca5a5; background:#fff; }
+.icon-btn.danger img{ width:20px; height:20px; }
+
+/* Recent post icon */
+.chip{
+  display:inline-flex; align-items:center; gap:8px;
+  padding:6px 10px; border-radius:999px;
+  border:1px solid #d7dce4; background:#f7f9fc; color:#334155; font-weight:600;
+}
+.chip-icon{ width:18px; height:18px; }
+
+/* Title row */
+.field-row{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:10px;
+  align-items:center;
+  max-width: auto;
+  margin:8px auto 8px;
+}
+.field-label{ font-weight:700; color:#1f2937; }
+.title-input{
+  height:32px; border:1px solid #d1d9e6; border-radius:999px;
+  padding:0 12px; width:100%;
+  background:#fff; font-size:13px;
+}
+
+/* Content editor */
+.editor{ max-width: auto; margin:8px auto; }
+.content-input{
+  width:100%;
+  min-height:140px;
+  border:1px solid #d7dde6; border-radius:12px;
+  padding:12px 14px; resize:vertical; background:#fff;
+  line-height:1.45; color:#2c3442;
+}
+
+/* Media grid */
+.media{ max-width: auto; margin:10px auto 6px; }
+.media-grid{
+  display:grid;
+  grid-template-columns:120px 120px;
+  gap:100px;
+  align-items:start;
+}
+.media-item{
+  width:200px; height:250px; border:1px solid #d7dde6; border-radius:10px; overflow:hidden; background:#fff;
+  display:grid; place-items:center;
+}
+.media-item img{ width:100%; height:100%; object-fit:contain; }
+.add-more{
+  width:200px; height:250px; border:2px dashed #cbd5e1; border-radius:10px; background:#fff; color:#9aa4b2;
+  font-size:42px; line-height:1; display:grid; place-items:center; cursor:pointer;
+}
+
+/* Post button alignment */
+.actions-row{ max-width: auto; margin:10px auto 20px; }
+.actions-row .btn{ padding:6px 16px; }
+
+/* Utility: do not invert pngs */
+.no-invert{ filter:none; }
