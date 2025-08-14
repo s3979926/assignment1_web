@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hobby Hub — Account</title>
+  <title>Hobby Hub — Reset Password</title>
   <link rel="stylesheet" href="account_style.css">
 </head>
 <body>
 
-  <!-- TOP BAR  using the same as recent html-->
+  <!-- TOP BAR -->
   <header class="topbar">
     <div class="topbar-inner">
       <!-- Left: Logo -->
@@ -46,32 +46,33 @@
 
   <!-- PAGE -->
   <main class="page">
-    <h1 class="auth-title">Login or Register</h1>
+    <!-- breadcrumb -->
+    <div class="crumbs">
+      <a class="link" href="forum.html">Home</a>
+      <span class="sep">›</span>
+      <span>Account</span>
+    </div>
 
     <div class="auth-grid">
-      <!-- Login -->
-      <section class="panel">
-        <h2 class="panel-head">Login</h2>
-        <p class="muted small">Welcome to your account.</p>
+      <!-- Reset password -->
+    <section class="panel">
+        <h2 class="panel-head">Reset your password</h2>
+        <p class="muted small">We will send you an email to reset your password.</p>
 
-        <form class="form" onsubmit="event.preventDefault();">
-          <label class="label">Email Address*</label>
-          <input class="input" type="email" placeholder="abd@gmail.com" required>
+  <!-- Submit goes to forgot2.html -->
+        <form class="form" action="forgot2.html" method="get">
+            <label class="label" for="reset-email">Email Address*</label>
+                <input id="reset-email" name="email" class="input" type="email"
+           placeholder="abd@gmail.com" autocomplete="email" required>
 
-          <label class="label">Password*</label>
-          <input class="input" type="password" placeholder="**********" required>
+                <button class="btn primary w-140" type="submit">Submit</button>
 
-          <button class="btn primary w-160" type="submit">Login</button>
-
-          <p class="hint">
-            <a class="link" href="forgot.html">Forgot your password?</a>
-            <span class="sep">/</span>
-            <a class="link" href="shopping.html">Return to store</a>
-          </p>
+            <p class="hint">or <a class="link" href="account.html">Cancel</a></p>
         </form>
-      </section>
+</section>
 
-      <!-- Register -->
+
+      <!-- Create account (same as account.html right column) -->
       <section class="panel">
         <h2 class="panel-head">Create A New Account</h2>
         <p class="subhead">Account information</p>

@@ -3,26 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hobby Hub — Account</title>
+  <title>Hobby Hub — Register / Email Sent</title>
   <link rel="stylesheet" href="account_style.css">
 </head>
 <body>
 
-  <!-- TOP BAR  using the same as recent html-->
+  <!-- TOP BAR -->
   <header class="topbar">
     <div class="topbar-inner">
-      <!-- Left: Logo -->
       <a class="brand" href="forum.html">
         <img src="picture/logo.png" alt="Hobby Hub logo" class="logo-img">
       </a>
 
-      <!-- Center: Search -->
       <form class="search" role="search" aria-label="Site search" onsubmit="event.preventDefault();">
         <input type="search" placeholder="Search" aria-label="Search" />
         <button type="submit" aria-label="Search" class="search-btn">Search</button>
       </form>
 
-      <!-- Right: user, cart -->
       <div class="actions">
         <a href="account.html" class="action-btn" aria-label="Account">
           <img src="icon/user_icon.png" alt="" class="icon-dark-img">
@@ -46,52 +43,24 @@
 
   <!-- PAGE -->
   <main class="page">
-    <h1 class="auth-title">Login or Register</h1>
+    <!-- breadcrumb -->
+    <div class="crumbs">
+      <a class="link" href="forum.html">Home</a>
+      <span class="sep">›</span>
+      <span>Account</span>
+    </div>
 
     <div class="auth-grid">
-      <!-- Login -->
+      <!-- Left column: message -->
       <section class="panel">
-        <h2 class="panel-head">Login</h2>
-        <p class="muted small">Welcome to your account.</p>
-
-        <form class="form" onsubmit="event.preventDefault();">
-          <label class="label">Email Address*</label>
-          <input class="input" type="email" placeholder="abd@gmail.com" required>
-
-          <label class="label">Password*</label>
-          <input class="input" type="password" placeholder="**********" required>
-
-          <button class="btn primary w-160" type="submit">Login</button>
-
-          <p class="hint">
-            <a class="link" href="forgot.html">Forgot your password?</a>
-            <span class="sep">/</span>
-            <a class="link" href="shopping.html">Return to store</a>
-          </p>
-        </form>
+        <h2 class="panel-head">Register</h2>
+        <p class="muted small">
+          We have sent an email to <strong>abd@gmail.com</strong>, please click the link included to verify your email address.
+        </p>
       </section>
 
-      <!-- Register -->
-      <section class="panel">
-        <h2 class="panel-head">Create A New Account</h2>
-        <p class="subhead">Account information</p>
-
-        <form class="form" onsubmit="event.preventDefault();">
-          <label class="label">First Name*</label>
-          <input class="input" type="text" placeholder="John" required>
-
-          <label class="label">Last Name*</label>
-          <input class="input" type="text" placeholder="Smith" required>
-
-          <label class="label">Email Address*</label>
-          <input class="input" type="email" placeholder="abd@gmail.com" required>
-
-          <label class="label">Password*</label>
-          <input class="input" type="password" placeholder="**********" required>
-
-          <a href="register.html" class="btn primary w-200">Create an account</a>
-        </form>
-      </section>
+      <!-- Right column intentionally empty in the mockup -->
+      <section class="panel"></section>
     </div>
   </main>
 
