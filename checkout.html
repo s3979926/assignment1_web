@@ -58,6 +58,11 @@
       <h2>Shipping address</h2>
       <select>
         <option>Australia</option>
+        <option>New Zealand</option>
+        <option>Viet Nam</option>
+        <option>Germany</option>
+        <option>United State Of America</option>
+        <option>United Kingdom</option>
       </select>
       <input type="text" placeholder="First Name" value="Join">
       <input type="text" placeholder="Last Name" value="Smith">
@@ -73,24 +78,69 @@
       </select>
       <input type="text" placeholder="Postal Code" value="3000">
       <input type="text" placeholder="Phone" value="(03) 9663 3536">
-      <button>Continue to Checkout</button>
+      <a href="creditcardpayment.html" class="btn-red">Continue to Checkout</a>
     </div>
 
-    <div class="right">
-      <div class="product">
-        <img src="picture/unicorn.png" alt="Gundam" height="400" width="400">
-        <div>
-          <p>RG 1/144 RX-0 Unicorn Gundam</p>
-          <p>$79.99</p>
-        </div>
-      </div>
-      <input type="text" placeholder="Discount code or gift card">
-      <button>Apply</button>
-      <div class="total">
-        <p>Subtotal: $79.99</p>
-        <p>Shipping: $9.99</p>
-        <h3>Total: AUD $89.98</h3>
-        <small>including 10% in taxes</small>
+    <!-- RIGHT SECTION -->
+    <div class="right-section">
+      <div class="order-summary">
+        <img src="picture/unicorn.png" alt="RG 1/144 RX-0 Unicorn Gundam" />
+        <p><strong>RG 1/144 RX-0 Unicorn Gundam</strong></p>
+        <p>$79.99</p>
+
+        <form class="discount-code">
+          <input type="text" placeholder="Discount code or gift card" />
+           <button>Apply</button>
+        </form>
+
+        <div class="summary-item">Subtotal: <span>$79.99</span></div>
+        <div class="summary-item">Shipping: <span>$9.99</span></div>
+        <div class="total">Total: AUD $89.98</div>
+        <p style="font-size: 13px; color: var(--muted); margin-top: 6px;">Including 10% in taxes</p>
       </div>
     </div>
   </div>
+  <footer class="site-footer">
+  <div class="footer-top">
+    <!-- Left: brand  -->
+    <div class="col brand-col">
+      <div class="brand-row">
+        <img src="picture/logo.png" alt="Hobby Hub" class="footer-logo">
+        <div class="brand-name">Hobby Hub</div>
+      </div>
+      <p>Hobby Hub has been proudly servicing our dedicated customers all over Melbourne, Australia.</p>
+    </div>
+
+    <!-- Middle: links  -->
+    <div class="col links-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-list">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Services</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- Right: contact -->
+    <div class="col contact-col">
+      <h4>Contact &amp; Support</h4>
+      <p>650 Lonsdale St, Melbourne VIC 3000,<br>Australia</p>
+      <p>(+61) 429 482 916</p>
+      <p>support@hobbyhub.com</p>
+      <p>Mon–Fri: 9AM–5PM</p>
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="footer-bottom">
+    <div class="copy">©2025 HobbyHub. All rights reserved.</div>
+    <div class="legal">
+      <span>Privacy Policy</span>
+      <span>Terms of Service</span>
+      <span>Cookie Policy</span>
+      <span>Accessibility</span>
+    </div>
+  </div>
+</footer>
