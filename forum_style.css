@@ -262,9 +262,62 @@ body{
   font-size:42px; line-height:1; display:grid; place-items:center; cursor:pointer;
 }
 
-/* Post button alignment */
-.actions-row{ max-width: auto; margin:10px auto 20px; }
-.actions-row .btn{ padding:6px 16px; }
+/* THIS is For recent posts */
 
-/* Utility: do not invert pngs */
-.no-invert{ filter:none; }
+/* Left = Create, Right = Filter */
+.recent-controls{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+
+/* Centered label with a thin line through it */
+.section-label{ position:relative; text-align:center; margin:4px 0 12px; }
+.section-label::before{
+  content:"";
+  display:block;
+  height:1px;
+  background:var(--line);
+}
+.section-label span{
+  position:relative;
+  top:-12px;
+  background:#fff;
+  padding:2px 10px;
+  border-radius:12px;
+  font-weight:700;
+  color:#1a2d4e;
+}
+
+/* Small inline actions on post title row */
+.post-head{ position:relative; }
+.post-actions{
+  position:absolute;
+  right:0; top:0;
+  display:flex; gap:8px; align-items:center;
+}
+.btn.xs{
+  padding:4px 10px;
+  font-size:12px;
+  border-radius:6px;
+  background:#fff;
+  border:1px solid #d7dce4;
+  color:#0a2a55;
+}
+
+/* Simple image row used in recent posts and replies */
+.gallery{ display:flex; gap:12px; margin:10px 0; }
+.gallery img{
+  width:180px; height:auto;
+  border:1px solid #cbd5e1; border-radius:6px; background:#fff;
+}
+
+/* reply */
+.reply-card{
+  border:1px solid var(--line);
+  border-radius:8px;
+  background:#fff;
+  padding:10px;
+  margin-bottom:12px;
+}
