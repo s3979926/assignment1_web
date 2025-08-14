@@ -33,9 +33,7 @@
       </div>
     </div>
   </header>
-      <!-- Contents -->
-       <img src="Rg unicorn.png">
-
+      
 
   <!-- BOTTOM NAV -->
 <nav class="nav" aria-label="Main">
@@ -46,3 +44,93 @@
     <button class="nav-btn">PRODUCT REVIEW</button>
   </div>
 </nav>
+
+  <!-- MAIN CONTENT -->
+  
+
+    <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+</head>
+<body>
+
+  <p>Home ➡ Shopping cart</p>
+  <h1>Shopping cart</h1>
+
+  <table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+      <th>PRODUCT</th>
+      <th>Details</th>
+      <th>Quantity</th>
+      <th>Actions</th>
+    </tr>
+    <tr>
+      <td>
+        <img src="unicorn.png" alt="Unicorn Gundam" width="150">
+      </td>
+      <td>
+        <p><b>Bandai</b></p>
+        <p>RG 1/144 RX-0 Unicorn Gundam</p>
+        <p>$79.99</p>
+      </td>
+      <td>
+       <form>
+          <label for="qty">Quantity:</label>
+          <input type="number" id="qty" name="qty" value="1" min="1">
+        </form>
+      </td>
+      <td>
+        <form>
+          <button type="button">REMOVE</button>
+          <button type="button">UPDATE CART</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+  <p><b>SUBTOTAL:</b> $79.99</p>
+
+  <p>
+    <button>Note</button> Additional comments
+  </p>
+
+  <textarea rows="4" cols="40" placeholder="Leave a comment"></textarea>
+  <br><br>
+
+
+<!-- Buttons Section -->
+<div style="text-align: right; margin: 20px;">
+  <!-- Continue Shopping Button (Above) -->
+  <button 
+      style="
+          font-size: 20px; 
+          padding: 15px 30px; 
+          background-color: white; 
+          color: black; 
+          border: 2px solid black; 
+          border-radius: 5px; 
+          cursor: pointer;
+          width: 250px;
+          margin-bottom: 10px;">
+    CONTINUE SHOPPING
+  </button>
+
+  <!-- Proceed to Checkout Button (Below) -->
+  <button 
+      onclick="location.href='checkout.html'" 
+      style="
+          font-size: 20px; 
+          padding: 15px 30px; 
+          background-color: red; 
+          color: white; 
+          border: none; 
+          border-radius: 5px; 
+          cursor: pointer;
+          width: 250px;">
+    PROCEED TO CHECKOUT
+  </button>
+</div>
+
+</body>
+</html>
