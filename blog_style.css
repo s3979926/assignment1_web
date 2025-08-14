@@ -498,6 +498,15 @@ body {
   line-height: 1.5;
 }
 
+.footer-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-list li a:hover {
+  text-decoration: underline;
+}
+
 .footer-list {
   list-style: none;
   padding: 0;
