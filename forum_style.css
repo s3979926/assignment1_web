@@ -214,7 +214,7 @@ body{
 .chip{
   display:inline-flex; align-items:center; gap:8px;
   padding:6px 10px; border-radius:999px;
-  border:1px solid #d7dce4; background:#f7f9fc; color:#334155; font-weight:600;
+  border:1px solid #d7dce4; background:#f7f9fc; color:#334155; font-weight:600;text-decoration:none
 }
 .chip-icon{ width:18px; height:18px; }
 
