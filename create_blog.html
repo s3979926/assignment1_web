@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hobby Hub — Create Blog Post</title>
+  <link rel="stylesheet" href="blog_style.css">
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <!-- Left: Logo -->
+      <a class="brand" href="#">
+        <img src="picture/logo.png" alt="Hobby Hub logo" class="logo-img">
+      </a>
+
+      <!-- Center: Search (search button) -->
+      <form class="search" role="search" aria-label="Site search" onsubmit="event.preventDefault();">
+        <input type="search" placeholder="Search" aria-label="Search" />
+        <button type="submit" aria-label="Search" class="search-btn">Search</button>
+      </form>
+
+      <!-- Right: user, cart -->
+      <div class="actions">
+        <button class="action-btn" aria-label="Account">
+          <img src="icon/user_icon.png" alt="Account" class="icon-dark-img">
+        </button>
+        <button class="action-btn" aria-label="Cart">
+          <img src="icon/cart_icon.png" alt="Cart" class="icon-dark-img">
+        </button>
+      </div>
+    </div>
+  </header>
+      
+  <!-- BOTTOM NAV -->
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="#">HOME</a>
+      <a href="#">FORUM</a>
+      <a href="#">BLOG</a>
+      <a href="#">PRODUCT REVIEW</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="page create-blog">
+    <header class="create-head">
+      <h1>Create New Blog Post</h1>
+      <p class="create-sub">
+        Share your trading card game insights, strategies, and experiences with the community
+      </p>
+    </header>
+
+    <form class="blog-form">
+      <div class="form-group">
+        <label for="post-title">Post Title</label>
+        <input type="text" id="post-title" placeholder="Enter an engaging title for your post (e.g., Top 5 Budget Decks That Dominate the Meta)">
+      </div>
+
+      <div class="form-group">
+        <label for="post-category">Category</label>
+        <select id="post-category">
+          <option value="">Select a category for your post</option>
+          <option value="meta">Meta Deck Analysis</option>
+          <option value="review">New Set Review</option>
+          <option value="budget">Budget Deck Guide</option>
+          <option value="tournament">Tournament Report</option>
+          <option value="tips">Beginner Tips</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="post-tags">Tags</label>
+        <input type="text" id="post-tags" placeholder="Add relevant tags separated by commas to help others find your post">
+        <small>e.g. strategy, budget, tournament, meta, competition, beginner</small>
+      </div>
+
+      <div class="form-group">
+        <label>Featured Image</label>
+        <div class="image-upload">
+          <div class="upload-area">
+            <span>Click to upload an image or drag and drop</span>
+            <span class="upload-hint">PNG, JPG, GIF up to 10MB. Recommended size 1200x630px</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group tips-section">
+        <h3>Writing Tips for Great Posts</h3>
+        <ul class="tips-list">
+          <li>Use clear headings to organize your content</li>
+          <li>Include specific examples and card interactions</li>
+          <li>Share your reasoning behind strategic decisions</li>
+          <li>Add deck lists with explanations when relevant</li>
+          <li>Be engaging and write in a conversational tone</li>
+          <li>Include personal experiences and lessons learned</li>
+        </ul>
+      </div>
+
+      <div class="form-group">
+        <label for="post-content">Post Content</label>
+        <textarea id="post-content" rows="12" placeholder="Share your knowledge and insights here..."></textarea>
+        <small>
+          You can include:<br>
+          - Detailed strategy explanations<br>
+          - Step-by-step deck building guides<br>
+          - Tournament match reports<br>
+          - Card combo explanations<br>
+          - Meta analysis and predictions<br>
+          - Personal experiences and stories<br>
+          - Tips for new players<br><br>
+          Write as much detail as you'd like - longer, comprehensive posts tend to be more helpful to the community!
+        </small>
+      </div>
+
+      <div class="form-actions">
+        <a href="blog.html" class="btn secondary">Back to Blog</a>
+        <button type="button" class="btn">Save as Draft</button>
+        <button type="submit" class="btn primary">Publish Post</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <!-- Left: brand -->
+      <div class="col brand-col">
+        <div class="brand-row">
+          <img src="picture/logo.png" alt="Hobby Hub" class="footer-logo">
+          <div class="brand-name">Hobby Hub</div>
+        </div>
+        <p>Hobby Hub has been proudly servicing our dedicated customers all over Melbourne, Australia.</p>
+      </div>
+
+      <!-- Middle: links -->
+      <div class="col links-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-list">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <!-- Right: contact -->
+      <div class="col contact-col">
+        <h4>Contact &amp; Support</h4>
+        <p>650 Lonsdale St, Melbourne VIC 3000,<br>Australia</p>
+        <p>(+61) 429 482 916</p>
+        <p>support@hobbyhub.com</p>
+        <p>Mon–Fri: 9AM–5PM</p>
+      </div>
+    </div>
+
+    <div class="rule"></div>
+
+    <div class="footer-bottom">
+      <div class="copy">©2025 HobbyHub. All rights reserved.</div>
+      <div class="legal">
+        <span>Privacy Policy</span>
+        <span>Terms of Service</span>
+        <span>Cookie Policy</span>
+        <span>Accessibility</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
