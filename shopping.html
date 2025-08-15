@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Hobby Hub — Forum</title>
+  <title>Hobby Hub — Shopping cart</title>
   <link rel="stylesheet" href="new.css">
 </head>
 <body>
@@ -11,18 +11,18 @@
   <!-- TOP BAR -->
   <header class="topbar">
     <div class="topbar-inner">
-      <!-- Left: Logo -->
-      <a class="brand" href="#">
+      <!-- Logo -->
+      <a class="brand" href="forum.html">
         <img src="picture/logo.png" alt="Hobby Hub logo" class="logo-img">
       </a>
 
-      <!-- Center: Search (search button) -->
+      <!--  Search -->
       <form class="search" role="search" aria-label="Site search" onsubmit="event.preventDefault();">
         <input type="search" placeholder="Search" aria-label="Search" />
         <button type="submit" aria-label="Search" class="search-btn">Search</button>
       </form>
 
-       <!-- Right: user, cart -->
+      <!-- Right user, cart -->
       <div class="actions">
         <a href="account.html" class="action-btn" aria-label="Account">
           <img src="icon/user_icon.png" alt="" class="icon-dark-img">
@@ -35,144 +35,123 @@
   </header>
 
   <!-- BOTTOM NAV -->
-<nav class="nav" aria-label="Main">
-  <div class="nav-inner">
-    <a href="home.html">HOME</a>
-    <a href="forum.html">FORUM</a>
-    <a href="blog.html">BLOG</a>
-    <a href="productreview.html">PRODUCT REVIEW</a>
-  </div>
-</nav>
+  <nav class="nav" aria-label="Main">
+    <div class="nav-inner">
+      <a href="home.html">HOME</a>
+      <a href="forum.html">FORUM</a>
+      <a href="blog.html">BLOG</a>
+      <a href="product_review.html">PRODUCT REVIEW</a>
+    </div>
+  </nav>
 
-  <!-- MAIN CONTENT -->
-  
+  <!-- ===== PAGE main content ===== -->
+  <main class="page cart">
+    
+    <div class="crumbs">
+      <a class="link" href="home.html">Home</a>
+      <span class="sep">›</span>
+      <span>Shopping cart</span>
+    </div>
 
-    <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart</title>
-</head>
-<body>
+    <h1 class="cart-title">Shopping cart</h1>
 
-  <p>Home ➡ Shopping cart</p>
-  <h1>Shopping cart</h1>
+    <div class="cart-grid">
+      <!-- LEFT  card -->
+      <section class="cart-left">
+        <div class="cart-card card">
+          <div class="cart-head">PRODUCT</div>
 
-  <table border="1" cellpadding="10" cellspacing="0">
-    <tr>
-      <th>PRODUCT</th>
-      <th>Details</th>
-      <th>Quantity</th>
-      <th>Actions</th>
-    </tr>
-    <tr>
-      <td>
-        <img src="picture/unicorn.png" alt="Unicorn Gundam" width="150" height="100">
-      </td>
-      <td>
-        <p><b>Bandai</b></p>
-        <p>RG 1/144 RX-0 Unicorn Gundam</p>
-        <p>$79.99</p>
-      </td>
-      <td>
-       <form>
-          <label for="qty">Quantity:</label>
-          <input type="number" id="qty" name="qty" value="1" min="1">
-        </form>
-      </td>
-      <td>
-        <form>
-          <button type="button">REMOVE</button>
-          <button type="button">UPDATE CART</button>
-        </form>
-      </td>
-    </tr>
-  </table>
+          <div class="cart-row">
+            <div class="prod-media">
+              <img src="picture/unicorn.png" alt="Unicorn Gundam" width="170" height="100">
+            </div>
 
-  <p><b>SUBTOTAL:</b> $79.99</p>
+            <div class="prod-info">
+              <div class="brand">Bandai</div>
+              <div class="title">RG 1/144 RX-0 Unicorn Gundam</div>
+              <div class="price">$79.99</div>
 
-  <p>
-    <button>Note</button> Additional comments
-  </p>
+              <div class="qty-area">
+                <span class="qty-label">Quantity</span>
 
-  <textarea rows="4" cols="40" placeholder="Leave a comment"></textarea>
-  <br><br>
+                <div class="qty">
+                  <button class="qty-btn" aria-label="Decrease">−</button>
+                  <input type="number" value="1" min="1" aria-label="Quantity">
+                  <button class="qty-btn" aria-label="Increase">+</button>
+                </div>
 
+                <button class="btn ghost sm">REMOVE</button>
+                <button class="btn sm">UPDATE CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-<!-- Buttons Section -->
-<div style="text-align: right; margin: 20px;">
-  <!-- Continue Shopping Button (Above) -->
-  <button 
-      style="
-          font-size: 20px; 
-          padding: 15px 30px; 
-          background-color: white; 
-          color: black; 
-          border: 2px solid black; 
-          border-radius: 5px; 
-          cursor: pointer;
-          width: 250px;
-          margin-bottom: 10px;">
-    CONTINUE SHOPPING
-  </button>
+        <a href="product_review.html" class="btn ghost sm mt-12">CONTINUE SHOPPING</a>
+      </section>
 
-  <!-- Proceed to Checkout Button (Below) -->
-  <button 
-      onclick="location.href='checkout.html'" 
-      style="
-          font-size: 20px; 
-          padding: 15px 30px; 
-          background-color: #072f61; 
-          color: white; 
-          border: none; 
-          border-radius: 5px; 
-          cursor: pointer;
-          width: 250px;">
-    PROCEED TO CHECKOUT
-  </button>
-</div>
+      <!-- summary / note / checkout -->
+      <aside class="cart-right">
+        <div class="summary card">
+          <div class="summary-box">
+            <div class="summary-row head">SUBTOTAL</div>
+            <div class="summary-row total">$79.99</div>
+          </div>
+
+          <div class="note-tabs">
+            <button class="tab active">Note</button>
+            <button class="tab">Additional comments</button>
+          </div>
+
+          <textarea class="note-input" placeholder="Leave a comment"></textarea>
+
+          <a href="checkout.html" class="btn primary block">Proceed to Checkout</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
   <footer class="site-footer">
-  <div class="footer-top">
-    <!-- Left: brand  -->
-    <div class="col brand-col">
-      <div class="brand-row">
-        <img src="picture/logo.png" alt="Hobby Hub" class="footer-logo">
-        <div class="brand-name">Hobby Hub</div>
+    <div class="footer-top">
+      <div class="col brand-col">
+        <div class="brand-row">
+          <img src="picture/logo.png" alt="Hobby Hub" class="footer-logo">
+          <div class="brand-name">Hobby Hub</div>
+        </div>
+        <p>Hobby Hub has been proudly servicing our dedicated customers all over Melbourne, Australia.</p>
       </div>
-      <p>Hobby Hub has been proudly servicing our dedicated customers all over Melbourne, Australia.</p>
+
+      <div class="col links-col">
+        <h4>Quick Links</h4>
+        <ul class="footer-list">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div class="col contact-col">
+        <h4>Contact &amp; Support</h4>
+        <p>650 Lonsdale St, Melbourne VIC 3000,<br>Australia</p>
+        <p>(+61) 429 482 916</p>
+        <p>support@hobbyhub.com</p>
+        <p>Mon–Fri: 9AM–5PM</p>
+      </div>
     </div>
 
-    <!-- Middle: links  -->
-    <div class="col links-col">
-      <h4>Quick Links</h4>
-      <ul class="footer-list">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Services</li>
-        <li>Contact Us</li>
-      </ul>
-    </div>
+    <div class="rule"></div>
 
-    <!-- Right: contact -->
-    <div class="col contact-col">
-      <h4>Contact &amp; Support</h4>
-      <p>650 Lonsdale St, Melbourne VIC 3000,<br>Australia</p>
-      <p>(+61) 429 482 916</p>
-      <p>support@hobbyhub.com</p>
-      <p>Mon–Fri: 9AM–5PM</p>
+    <div class="footer-bottom">
+      <div class="copy">©2025 HobbyHub. All rights reserved.</div>
+      <div class="legal">
+        <span>Privacy Policy</span>
+        <span>Terms of Service</span>
+        <span>Cookie Policy</span>
+        <span>Accessibility</span>
+      </div>
     </div>
-  </div>
-
-  <div class="rule"></div>
-
-  <div class="footer-bottom">
-    <div class="copy">©2025 HobbyHub. All rights reserved.</div>
-    <div class="legal">
-      <span>Privacy Policy</span>
-      <span>Terms of Service</span>
-      <span>Cookie Policy</span>
-      <span>Accessibility</span>
-    </div>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
