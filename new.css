@@ -137,8 +137,7 @@ body{
 .legal span{ white-space: nowrap; }
 
 
-/* THIS IS FOR CREATE PAGE */
-/* controls row under forum */
+
 .compose-controls{
   display:flex;
   align-items:center;
@@ -154,7 +153,6 @@ body{
 .icon-btn.danger{ border-color:#fca5a5; background:#fff; }
 .icon-btn.danger img{ width:20px; height:20px; }
 
-/* Recent post icon */
 .chip{
   display:inline-flex; align-items:center; gap:8px;
   padding:6px 10px; border-radius:999px;
@@ -178,7 +176,7 @@ body{
   background:#fff; font-size:13px;
 }
 
-/* Content editor */
+
 .editor{ max-width: auto; margin:8px auto; }
 .content-input{
   width:100%;
@@ -188,7 +186,7 @@ body{
   line-height:1.45; color:#2c3442;
 }
 
-/* Media grid */
+
 .media{ max-width: auto; margin:10px auto 6px; }
 .media-grid{
   display:grid;
@@ -206,11 +204,11 @@ body{
   font-size:42px; line-height:1; display:grid; place-items:center; cursor:pointer;
 }
 
-/* Post button alignment */
+
 .actions-row{ max-width: auto; margin:10px auto 20px; }
 .actions-row .btn{ padding:6px 16px; }
 
-/* Utility: do not invert pngs */
+
 .no-invert{ filter:none; }
 
 :root{
@@ -352,8 +350,6 @@ body{
 .legal span{ white-space: nowrap; }
 
 
-/* THIS IS FOR CREATE PAGE */
-/* controls row under forum */
 .compose-controls{
   display:flex;
   align-items:center;
@@ -369,7 +365,7 @@ body{
 .icon-btn.danger{ border-color:#fca5a5; background:#fff; }
 .icon-btn.danger img{ width:20px; height:20px; }
 
-/* Recent post icon */
+
 .chip{
   display:inline-flex; align-items:center; gap:8px;
   padding:6px 10px; border-radius:999px;
@@ -393,7 +389,7 @@ body{
   background:#fff; font-size:13px;
 }
 
-/* Content editor */
+
 .editor{ max-width: auto; margin:8px auto; }
 .content-input{
   width:100%;
@@ -403,7 +399,7 @@ body{
   line-height:1.45; color:#2c3442;
 }
 
-/* Media grid */
+
 .media{ max-width: auto; margin:10px auto 6px; }
 .media-grid{
   display:grid;
@@ -425,7 +421,7 @@ body{
 .actions-row{ max-width: auto; margin:10px auto 20px; }
 .actions-row .btn{ padding:6px 16px; }
 
-/* Utility: do not invert pngs */
+
 .no-invert{ filter:none; }
 
 /* ===== Checkout Page ===== */
@@ -744,10 +740,10 @@ form label {
   align-items: start;
 }
 
-/* generic card */
+/*  card */
 .card{ background:#fff; border:1px solid var(--line); border-radius:8px; padding:12px; }
 
-/* left side product card */
+/* left side  card */
 .cart-head{
   font-size:12px; font-weight:700; color:#0f172a;
   padding-bottom:8px; border-bottom:1px solid var(--line); margin-bottom:10px;
@@ -770,7 +766,7 @@ form label {
   width:26px; height:26px; border:1px solid #cbd5e1; border-radius:4px; background:#fff; cursor:pointer;
 }
 
-/* Buttons (reusable) */
+
 .btn{
   display:inline-flex; align-items:center; justify-content:center;
   gap:6px; padding:8px 12px; border-radius:6px;
@@ -783,7 +779,7 @@ form label {
 .btn.block{ display:block; width:100%; }
 .mt-12{ margin-top:12px; }
 
-/* right summary */
+
 .summary-box{ border:1px solid var(--line); border-radius:6px; overflow:hidden; margin-bottom:12px; }
 .summary-row{ padding:10px 12px; text-align:center; }
 .summary-row.head{ background:#f3f6fb; font-weight:700; }
@@ -801,8 +797,4 @@ form label {
   padding:8px 10px; background:#fff; margin-bottom:12px; resize:vertical;
 }
 
-/* responsive */
-@media (max-width: 900px){
-  .cart-grid{ grid-template-columns: 1fr; }
-  .prod-media img{ width:140px; height:100px; }
-}
+
