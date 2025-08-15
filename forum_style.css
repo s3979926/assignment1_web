@@ -43,7 +43,7 @@ body{
 }
 .search-btn:hover{ background:var(--navy-dark); }
 
-/* Right action icons (PNG) */
+/* Right action icons*/
 .actions{ display:flex; align-items:center; gap:18px; }
 .action-btn{
   width:36px; height:36px; border-radius:6px; background:#001f47; display:grid; place-items:center;
@@ -60,10 +60,10 @@ body{
 }
 .nav a{ color:#000; text-decoration:none; font-weight:700; letter-spacing:.4px; }
 
-/* ===== PAGE WRAPPER ===== */
+/* ===== PAGE WRAPPER ==== */
 .page{ max-width:var(--maxw); margin:24px auto 60px; background:transparent; padding:0 16px; }
 
-/* Forum header row */
+/* Forum header  */
 .forum-head{ text-align:center; position:relative; padding:8px 0 20px; }
 .forum-head h1{ margin:8px 0 10px; font-size:30px; }
 .forum-sub{ margin:0 auto 14px; font-size:14px; color:var(--muted); max-width:800px; line-height:1.5; }
@@ -104,7 +104,7 @@ body{
 .post-body p{ margin:14px 0; line-height:1.5; color:#2c3442; }
 .post-note{ color:#4b5563; }
 
-/*  divider */
+
 .rule{ height:1px; background:var(--line); margin:10px 0; }
 
 /* Thumbnails */
@@ -127,7 +127,7 @@ body{
 .show-more{ font-size:13px; color:#1e40af; text-decoration:none; }
 .show-more:hover{ text-decoration:underline; }
 
-/* Reply form (big input + button) */
+/* Reply form */
 .reply-form{ margin-top:14px; display:flex; flex-direction:column; gap:6px; max-width:100%; }
 .reply-form input{
   width:100%; height:46px; border:1px solid #cbd5e1; border-radius:8px; padding:0 12px; font-size:14px;
@@ -193,8 +193,7 @@ body{
 .legal span{ white-space: nowrap; }
 
 
-/* THIS IS FOR CREATE PAGE */
-/* controls row under forum */
+
 .compose-controls{
   display:flex;
   align-items:center;
@@ -234,7 +233,7 @@ body{
   background:#fff; font-size:13px;
 }
 
-/* Content editor */
+/* Content */
 .editor{ max-width: auto; margin:8px auto; }
 .content-input{
   width:100%;
@@ -244,7 +243,7 @@ body{
   line-height:1.45; color:#2c3442;
 }
 
-/* Media grid */
+
 .media{ max-width: auto; margin:10px auto 6px; }
 .media-grid{
   display:grid;
@@ -262,7 +261,6 @@ body{
   font-size:42px; line-height:1; display:grid; place-items:center; cursor:pointer;
 }
 
-/* THIS is For recent posts */
 
 /* Left = Create, Right = Filter */
 .recent-controls{
@@ -272,7 +270,7 @@ body{
   gap:12px;
 }
 
-/* Centered label with a thin line through it */
+/* Centered label */
 .section-label{ position:relative; text-align:center; margin:4px 0 12px; }
 .section-label::before{
   content:"";
@@ -290,7 +288,6 @@ body{
   color:#1a2d4e;
 }
 
-/* Small inline actions on post title row */
 .post-head{ position:relative; }
 .post-actions{
   position:absolute;
